@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+        }
+        .navbar {
+            background-color: #212529;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .pricing-card {
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .pricing-header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ArtechZ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light ms-2" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2 class="fw-bold">Choose the Best Plan for You</h2>
+        <p class="lead">Flexible pricing that scales with your needs.</p>
+    </div>
+
+    <!-- Pricing Plans -->
+    <div class="container py-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <div class="pricing-header text-center">
+                        <h4>Free Plan</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3>$0 <small class="text-muted">/ month</small></h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>✔ 10 Users</li>
+                            <li>✔ 2 GB Storage</li>
+                            <li>✔ Email Support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 mt-3">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <div class="pricing-header text-center bg-success">
+                        <h4>Pro Plan</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3>$15 <small class="text-muted">/ month</small></h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>✔ 20 Users</li>
+                            <li>✔ 10 GB Storage</li>
+                            <li>✔ Priority Support</li>
+                        </ul>
+                        <button class="btn btn-success w-100 mt-3">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pricing-card">
+                    <div class="pricing-header text-center bg-danger">
+                        <h4>Enterprise Plan</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3>$29 <small class="text-muted">/ month</small></h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>✔ 30 Users</li>
+                            <li>✔ 15 GB Storage</li>
+                            <li>✔ Phone & Email Support</li>
+                        </ul>
+                        <button class="btn btn-danger w-100 mt-3">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">© 2025 ArtechZ</div>
+                <div class="col-md-4">
+                    <a href="#">Features</a> | <a href="#">Resources</a> | <a href="#">About</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

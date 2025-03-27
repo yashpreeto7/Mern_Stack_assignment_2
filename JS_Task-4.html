@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eef2f7;
+            font-family: "Verdana", sans-serif;
+        }
+        .wrapper {
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .btn-custom {
+            margin-top: 15px;
+            width: 80%;
+        }
+        .output {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2>Current Date & Time</h2>
+    <button class="btn btn-success btn-custom" onclick="displayDate()">Show Date</button>
+    <p id="date" class="output"></p>
+    <button class="btn btn-info btn-custom" onclick="displayTime()">Show Time</button>
+    <p id="time" class="output"></p>
+</div>
+
+<script>
+    function displayDate() {
+        const now = new Date();
+        const formattedDate = `${now.getDate()} ${now.toLocaleString('default', { month: 'long' })} ${now.getFullYear()}`;
+        document.getElementById("date").textContent = formattedDate;
+    }
+
+    function displayTime() {
+        const now = new Date();
+        const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        const gmtOffset = -now.getTimezoneOffset() / 60;
+        const formattedTime = `${now.toLocaleTimeString()} (GMT${gmtOffset >= 0 ? '+' : ''}${gmtOffset}) ${timeZone}`;
+        document.getElementById("time").textContent = formattedTime;
+    }
+</script>
+
+</body>
+</html>

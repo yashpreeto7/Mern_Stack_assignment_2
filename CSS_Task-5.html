@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sidebar</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeff2;
+            color: #222;
+        }
+        .wrapper {
+            display: flex;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 60px;
+            background: #34495e;
+            transition: width 0.3s ease-in-out;
+            padding-top: 20px;
+        }
+        .sidebar:hover {
+            width: 180px;
+        }
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            color: #f4f4f4;
+            text-decoration: none;
+            font-size: 16px;
+            white-space: nowrap;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background: #2c3e50;
+        }
+        .sidebar a i {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+        .sidebar span {
+            display: none;
+        }
+        .sidebar:hover span {
+            display: inline;
+        }
+        .content {
+            flex: 1;
+            padding: 25px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="#"><i>🏠</i> <span>Home</span></a>
+            <a href="#"><i>💻</i> <span>Programming</span></a>
+            <a href="#"><i>🎨</i> <span>Design</span></a>
+            <a href="#"><i>📄</i> <span>Documents</span></a>
+            <a href="#"><i>🚀</i> <span>Tools</span></a>
+        </div>
+        <div class="content">
+            <h1>Welcome to My Page</h1>
+            <p>Explore the interactive sidebar and navigate through different sections.</p>
+            <p>This page is styled with simplicity, ensuring a clean and user-friendly layout.</p>
+            <p>Last updated: 16 Feb 2025</p>
+            <hr>
+            <div class="footer">
+                <p>Made by myself. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

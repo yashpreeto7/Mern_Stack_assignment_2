@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            width: 40%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="radio"], .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .register-btn {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .register-btn:hover {
+            background-color: #e04e2a;
+        }
+        .ethnus-login {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .ethnus-login a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label>First Name:</label>
+            <input type="text" id="fname">
+        </div>
+
+        <div class="form-group">
+            <label>Last Name:</label>
+            <input type="text" id="lname">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <div class="form-group">
+            <label>Age:</label>
+            <input type="number" id="age">
+        </div>
+
+        <div class="form-group">
+            <label>Address:</label>
+            <textarea id="address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>State:</label>
+            <input type="text" id="state">
+        </div>
+
+        <div class="form-group">
+            <label>Country:</label>
+            <select id="country">
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Languages Known:</label>
+            <input type="checkbox" name="language" value="English"> Hindi
+            <input type="checkbox" name="language" value="Kannada"> English
+            <input type="checkbox" name="language" value="Hindi"> Japanese
+            <input type="checkbox" name="language" value="Telugu"> Spanish
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="declaration"> I hereby declare that all details provided are true.
+        </div>
+
+        <div class="ethnus-login">
+            <a href="#">Login to Ethnus</a>
+        </div>
+
+        <button type="submit" class="register-btn">REGISTER</button>
+    </form>
+</body>
+</html>

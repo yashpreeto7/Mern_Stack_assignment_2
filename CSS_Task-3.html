@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled 9x3 Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+            /* Alternate row color */
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Tata Industries</td>
+            <td>Rohan Iyer</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Reliance Ltd.</td>
+            <td>Priya Mehta</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Infosys Technologies</td>
+            <td>Arjun Sharma</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>HDFC Bank</td>
+            <td>Sneha Patil</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Mahindra Group</td>
+            <td>Amit Verma</td>
+            <td>India</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2 - Navigation Bars</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Navigation Containers */
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        /* Vertical Navigation Bar */
+        .vertical-nav {
+            width: 200px;
+            border: 1px solid #000;
+        }
+
+        .vertical-nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: blue;
+            border-bottom: 1px solid #000;
+            text-align: center;
+            background: #c9e6e6;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .vertical-nav a:first-child {
+            background: orange;
+            font-weight: bold;
+            color: white;
+        }
+
+        .vertical-nav a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Horizontal Navigation Bar */
+        .horizontal-nav {
+            display: flex;
+            border: 2px solid gray;
+        }
+
+        .horizontal-nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-right: 2px solid gray;
+            color: blue;
+            background: white;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .horizontal-nav a:first-child {
+            background: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        .horizontal-nav a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .horizontal-nav a:last-child {
+            border-right: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Task-2 Section -->
+
+        <div class="nav-container">
+            <!-- Vertical Navigation Bar -->
+            <div>
+                <h3>Vertical Navigation Bar</h3>
+                <div class="vertical-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Java</a>
+                    <a href="#">CSS</a>
+                    <a href="#">HTML</a>
+                    <a href="#">Bootstrap</a>
+                </div>
+            </div>
+
+            <!-- Horizontal Navigation Bar -->
+            <div>
+                <h3>Horizontal Navigation Bar</h3>
+                <div class="horizontal-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Java</a>
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
